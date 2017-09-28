@@ -244,7 +244,6 @@ class Yylex {
   private int zzEndRead;
 
   /** number of newlines encountered up to the start of the matched text */
-  private int yyline;
 
   /** the number of characters up to the start of the matched text */
   private int yychar;
@@ -392,7 +391,7 @@ int getPosition(){
     zzAtEOF  = false;
     zzEndRead = zzStartRead = 0;
     zzCurrentPos = zzMarkedPos = 0;
-    yyline = yychar = 0;
+    yychar = 0;
     zzLexicalState = YYINITIAL;
   }
 
